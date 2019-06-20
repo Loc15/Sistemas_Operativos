@@ -8,6 +8,9 @@ En segundo punto se realizó una modificacion al archivo threads.c, ademas de ag
 
 * [threads.c](threads.c)
 * [mycommon.h](mycommon.h)
+* [common.h](common.h)
+* [common_threads.h](common_threads.h)
+
 
 En el tercer punto se creó el archivo io.c donde el programa debia abrir un archivo texto.txt con un texto en su interior e imprimirlo al revés con ayuda de las funciones fskee() y ftell().
 
