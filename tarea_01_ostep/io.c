@@ -10,14 +10,20 @@ int main()
 	return 1;
     }
     
-    int posicion;
- 
-	fseek(archivo, -2, SEEK_END);  //(Nombre de la region de memoria, posiciones a movernos, cuenta desde el final)
-	posicion = ftell(archivo);
-	printf( "En la posición %d está la letra %c.\n", posicion, getc(archivo) );
-	
+    int x = -2;
+
+	fseek(archivo, x, SEEK_END); //(Nombre de la region de memoria, posiciones a movernos, cuenta desde el final)
+	printf("%c", fgetc(archivo));
+
+	x = x-1;
+	while(ftell(archivo)!=1){
+		fseek(archivo, x, SEEK_END);
+		printf("%c", fgetc(archivo));
+		x = x-1;
+	}
 
 	fclose(archivo);
+	
 	return 0;
 
 }

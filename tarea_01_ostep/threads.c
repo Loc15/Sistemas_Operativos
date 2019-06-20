@@ -4,24 +4,24 @@
 #include "common_threads.h"
 #include "mycommon.h"
 
-int puerta;
+puerta var;
 
 volatile int counter = 0; 
 int loops;
 
 void *worker(void *arg) {
-    cerrar_puerta();
+    cerrar_puerta(var);
     int i;
     for (i = 0; i < loops; i++) {
 	counter++;
-    abrir_puerta();
     }
+    abrir_puerta(var);
     return NULL;
 }
 
 int main(int argc, char *argv[]) {
 
-    crear_puerta();
+    crear_puerta(var);
 
     if (argc != 2) { 
 	fprintf(stderr, "usage: threads <loops>\n"); 
@@ -35,7 +35,7 @@ int main(int argc, char *argv[]) {
     Pthread_join(p1, NULL);
     Pthread_join(p2, NULL);
     printf("Final value   : %d\n", counter);
-    destruir_puerta();
+    destruir_puerta(var);
     return 0;
 }
 
