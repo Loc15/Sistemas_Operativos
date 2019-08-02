@@ -11,7 +11,12 @@ Se ejecuta entonces el programa thread.c de la siguiente forma:
 
 *`time ./thread 1000000`
 
-la ejecucion dura 0m0,009s
+la ejecucion dura 
+0m0,009s
+0m0,009s
+0m0,008s
+0m0,007s
+0m0,008s
 
 
 La segunda modificacion al programa threads, nombrado threads2 se ejecuta igual que anterior: 
@@ -23,7 +28,13 @@ La segunda modificacion al programa threads, nombrado threads2 se ejecuta igual 
 *`time ./thread2 1000000`
 
 
-la ejecucion dura 0m0,129s
+la ejecucion dura 
+0m0,129s
+0m0,129s
+0m0,129s
+0m0,130s
+0m0,127s
+
 
 * [threads.c](threads.c)
 * [threads2.c](threads2.c)
