@@ -34,6 +34,6 @@ Punto 2
 
 * [hilos.c](hilos.c)
 
-punto 3
+Punto 3
 
 * [env.c](env.c)
