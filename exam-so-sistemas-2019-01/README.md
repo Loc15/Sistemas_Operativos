@@ -3,15 +3,15 @@
 Punto 1
 
 Para realizar la primera parte del punto se hizo uso del comando ‘time’, que muestra el tiempo de ejecucion de un comando. El comando time muestra 3 tiempos pero es tomado el ‘real’ porque muestra el tiempo transcurrido entre la ejecucion y la finalizacion del comando. 
-Informacion tomada: 'https://es.wikipedia.org/wiki/Time_(Unix)'
+Informacion tomada: `https://es.wikipedia.org/wiki/Time_(Unix)`
 Se ejecuta entonces el programa thread.c de la siguiente forma:
-*'gcc -pthread thread.c -o thread' 
-*'time ./thread 1000000'
+*`gcc -pthread thread.c -o thread` 
+*`time ./thread 1000000`
 la ejecucion dura 0m0,009s
 
 La segunda modificacion al programa threads, nombrado threads2 se ejecuta igual que anterior: 
-*'gcc -pthread thread2.c -o thread2' 
-*'time ./thread2 1000000'
+*`gcc -pthread thread2.c -o thread2` 
+*`time ./thread2 1000000`
 la ejecucion dura 0m0,129s
 
 * [threads.c](threads.c)
