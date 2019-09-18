@@ -1,0 +1,2 @@
+*/2 * * * *     /home/usuario/Descargas/tn/readSensor.sh dev00 >> /home/usuario/Descargas/tn/logfile
+1-59/2 * * * *     /home/usuario/Descargas/tn/subirDatosTS.sh >> /home/usuario/Descargas/tn/logfile
